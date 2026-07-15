@@ -3,7 +3,7 @@
  * Plugin Name: [ENV] Mail
  * Plugin URI: https://github.com/strsar/env-mail
  * Description: Adds support for configuring outgoing email with SMTP or OAuth for Gmail and Office 365.
- * Version: 0.1.0
+ * Version: 0.1.1
  * Author: Envisionit, Scott Trsar
  * Author URI: https://envisionitagency.com/
  * Requires at least: 6.4

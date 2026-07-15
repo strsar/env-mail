@@ -7,7 +7,7 @@ if(!defined('ABSPATH')) {
 }
 
 final class Env_Mail_Plugin {
-  const VERSION = '0.1.0';
+  const VERSION = '0.1.1';
   const GITHUB_TOKEN = '';
 
   private static $instance = null;

@@ -1,7 +1,5 @@
 # [ENV] Mail
 
-![ENV Mail](assets/env-mail.svg)
-
 WordPress plugin for configuring outgoing email with SMTP or OAuth for Gmail and Office 365.
 
 ## Features
@@ -45,6 +43,11 @@ On a local site that becomes:
 `https://your-site.example/wp-admin/options-general.php?page=env-mail&tab=settings&action=oauth-callback`
 
 ## Changelog
+
+### 0.1.1
+
+- Updated the plugin icon asset
+- Kept the icon for the WordPress Plugins screen only
 
 ### 0.1.0
 
