@@ -46,6 +46,7 @@ final class Env_Mail_Settings {
     add_action('admin_init', [__CLASS__, 'register_settings']);
     add_action('admin_init', [__CLASS__, 'handle_oauth_request']);
     add_action('admin_menu', [__CLASS__, 'add_menu']);
+    add_action('admin_head-plugins.php', [__CLASS__, 'render_plugin_icon']);
     add_action('admin_post_env_mail_send_test', [__CLASS__, 'handle_send_test']);
     add_filter('plugin_action_links_' . plugin_basename(ENV_MAIL_FILE), [__CLASS__, 'plugin_action_links']);
   }
@@ -61,6 +62,46 @@ final class Env_Mail_Settings {
   public static function plugin_action_links($links) {
     array_unshift($links, '<a href="' . esc_url(admin_url('options-general.php?page=env-mail')) . '">Settings</a>');
     return $links;
+  }
+
+  public static function render_plugin_icon() {
+    $plugin_file = plugin_basename(ENV_MAIL_FILE);
+    $icon_url = plugins_url('assets/env-mail.svg', ENV_MAIL_FILE);
+    ?>
+    <style>
+      tr[data-plugin="<?php echo esc_attr($plugin_file); ?>"] td.plugin-title .env-mail-plugin-title {
+        display:flex;
+        align-items:center;
+        gap:10px;
+      }
+
+      tr[data-plugin="<?php echo esc_attr($plugin_file); ?>"] td.plugin-title .env-mail-plugin-icon {
+        width:28px;
+        height:28px;
+        flex:0 0 28px;
+      }
+    </style>
+    <script>
+      (function() {
+        var row = document.querySelector('tr[data-plugin="<?php echo esc_js($plugin_file); ?>"]');
+
+        if (!row) return;
+
+        var title = row.querySelector('td.plugin-title strong');
+
+        if (!title || title.querySelector('.env-mail-plugin-icon')) return;
+
+        title.classList.add('env-mail-plugin-title');
+
+        var icon = document.createElement('img');
+        icon.src = '<?php echo esc_js($icon_url); ?>';
+        icon.alt = '';
+        icon.className = 'env-mail-plugin-icon';
+
+        title.insertBefore(icon, title.firstChild);
+      }());
+    </script>
+    <?php
   }
 
   public static function sanitize_options($input) {
