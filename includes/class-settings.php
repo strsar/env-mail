@@ -66,7 +66,7 @@ final class Env_Mail_Settings {
 
   public static function render_plugin_icon() {
     $plugin_file = plugin_basename(ENV_MAIL_FILE);
-    $icon_url = plugins_url('assets/env-mail.svg', ENV_MAIL_FILE);
+    $icon_url = plugins_url('assets/icon.svg', ENV_MAIL_FILE);
     ?>
     <style>
       tr[data-plugin="<?php echo esc_attr($plugin_file); ?>"] td.plugin-title .env-mail-plugin-title {

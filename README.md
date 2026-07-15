@@ -48,6 +48,7 @@ On a local site that becomes:
 
 - Updated the plugin icon asset
 - Kept the icon for the WordPress Plugins screen only
+- Added the standard `assets/icon.svg` filename so the icon appears on WordPress update screens
 
 ### 0.1.0
 

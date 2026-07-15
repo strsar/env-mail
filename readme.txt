@@ -55,6 +55,7 @@ Use the redirect URI shown on `Settings > Mail`. It follows this format:
 
 * Updated the plugin icon asset.
 * Removed the icon from the GitHub README while keeping it in WordPress.
+* Added the standard `assets/icon.svg` filename so the icon appears on WordPress update screens.
 
 = 0.1.0 =
 
@@ -68,7 +69,7 @@ Use the redirect URI shown on `Settings > Mail`. It follows this format:
 
 = 0.1.1 =
 
-Updated the plugin icon and README presentation.
+Updated the plugin icon so it also appears on WordPress update screens.
 
 = 0.1.0 =
 
