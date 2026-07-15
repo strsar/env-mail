@@ -8,7 +8,7 @@
  * Author URI: https://envisionitagency.com/
  * Requires at least: 6.4
  * Requires PHP: 7.4
- * Tested up to: 6.8
+ * Tested up to: 7.0.1
  * Update URI: https://github.com/strsar/env-mail
  * GitHub Plugin URI: https://github.com/strsar/env-mail
  * Primary Branch: main

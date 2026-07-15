@@ -2,7 +2,7 @@
 Contributors: strsar
 Tags: smtp, email, mail, oauth, office365
 Requires at least: 6.4
-Tested up to: 6.8
+Tested up to: 7.0.1
 Stable tag: 0.1.1
 Requires PHP: 7.4
 License: GPLv2 or later
@@ -56,6 +56,7 @@ Use the redirect URI shown on `Settings > Mail`. It follows this format:
 * Updated the plugin icon asset.
 * Removed the icon from the GitHub README while keeping it in WordPress.
 * Added the standard `assets/icon.svg` filename so the icon appears on WordPress update screens.
+* Marked the plugin as tested up to WordPress 7.0.1.
 
 = 0.1.0 =
 
@@ -69,7 +70,7 @@ Use the redirect URI shown on `Settings > Mail`. It follows this format:
 
 = 0.1.1 =
 
-Updated the plugin icon so it also appears on WordPress update screens.
+Updated the plugin icon and marked compatibility through WordPress 7.0.1.
 
 = 0.1.0 =
 
